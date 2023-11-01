@@ -1,72 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-do">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <title>Inicio de sesión</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Este CSS nos servirá para utilizar los iconos de la página https://boxicons.com en el buscador. Buscamos el icono que queramos, le damos un clic, luego en font y copiamos la clase. -->
-    <link rel="stylesheet" href="../../css/inicio.css">
-
-    <link rel="stylesheet" href="./estilo.css">
-
+    <script src="https://kit.fontawesome.com/3a7225da88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <!--Contenedor de todos los objetos-->
+    <div class="container">
 
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form action="#">
-                <h1>Crear cuenta</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="social"><i class='bx bxl-google-plus'></i></a>
-                    <a href="#" class="social"><i class='bx bxl-linkedin'></i></a>
-                </div>
-                <span>o utiliza tu correo electrónico para registrarte</span>
-                <input type="text" placeholder="Usuario" />
-                <input type="email" placeholder="Correo electrónico" />
-                <input type="password" placeholder="Contraseña" />
-                <button>Registrarme</button>
-            </form>
+        <!--Contenedor de los objetos de inicio de sesion y registro sin los paneles para el slider-->
+        <div class="forms-container">
+            <!--Contenedor para el inicio de sesion -->
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h2 class="signin title">Iniciar sesión</h2>
+
+                    <div class="input-field">
+                        <i class="fas  fa-user"></i>
+                        <input type="text" placeholder="Nombre de usuario">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas  fa-lock"></i>
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    <input type="submit" value="Acceder" class="btn solid">
+
+                    <p class="social-text">O inicie sesión con las redes sociales</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                <!--Contenedor para los objetos de registro de usuario -->
+                <form action="#" class="sign-up-form">
+                    <h2 class="signup title">Registrarme</h2>
+
+                    <div class="input-field">
+                        <i class="fas  fa-user"></i>
+                        <input type="text" placeholder="Nombre de usuario">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas  fa-envelope"></i>
+                        <input type="text" placeholder="Correo electronico">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas  fa-lock"></i>
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    <input type="submit" value="Unirme" class="btn solid">
+
+                    <p class="social-text">O registrese con las redes sociales</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>Iniciar Sesión</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="social"><i class='bx bxl-google-plus'></i></a>
-                    <a href="#" class="social"><i class='bx bxl-linkedin'></i></a>
+
+        <!--Panel para el slider -->
+        <div class="panels-container">
+            <!--Panel izquierdo  -->
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Nuevo aqui?</h3>
+                    <p>Únete a nuestra comunidad y experimenta la conveniencia de ser parte de nuestra familia.
+                        ¡Regístrate hoy para acceder a contenido exclusivo y mucho más!"</p>
+                    <button class="btn transparent" id="sign-up-btn">Unirme</button>
                 </div>
-                <span>o utiliza tu cuenta</span>
-                <input type="text" placeholder="Usuario" />
-                <input type="password" placeholder="Contraseña" />
-                <a href="#">¿Olvidaste tu contraseña?</a>
-                <button>Acceder</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>¡Bienvenido de nuevo!</h1>
-                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
-                    <button class="ghost" id="signIn">Iniciar sesión</button>
+
+                <img src="assets/img/undraw_maker_launch_crhe.svg" class="image" alt="Rock">
+            </div>
+
+            <!--Panel derecho -->
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>¿Ya eres uno de nosotros?</h3>
+                    <p>Inicia sesión para continuar disfrutando de nuestra familia. Tu puerta de acceso a una
+                        experiencia personalizada te espera."</p>
+                    <button class="btn transparent" id="sign-in-btn">Acceder</button>
                 </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>¡Bienvenido amigo!</h1>
-                    <p>Introduce tus datos personales y comienza tu viaje con nosotros.</p>
-                    <button class="ghost" id="signUp">registrarme</button>
-                </div>
+                <img src="assets/img/undraw_press_play_bx2d.svg" class="image" alt="Rock">
             </div>
         </div>
     </div>
 
-
-    <script src="./script.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
